@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACTOPIA</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="images/logo.jpg" alt="Logo" class="logo-img me-2" width="40" height="40">
+                    <span>FACTOPIA</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="saved.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="profileLink">Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <div class="about-container bg-light p-4 rounded mb-5">
+            <h2 class="about-title">About Us</h2>
+                <p class="about-text">
+                    Welcome to our website! We are a team of enthusiasts dedicated to sharing engaging and informative articles on a wide variety of topics. Our goal is to create a platform where everyone can find something interesting, delve into new ideas, and broaden their horizons.
+                </p>
+                <p class="about-text">
+                    We believe that knowledge is power, and each day presents unique opportunities for learning and growth. Our articles cover a broad range of subjects, including science, technology, psychology, art, and much more. We aim to provide content that not only entertains but also inspires.
+                </p>
+                <p class="about-text">
+                    Our team consists of professional writers and experts who work diligently to ensure that every piece is thoroughly researched and crafted with care. We are thrilled to have you with us and hope you find something that sparks your imagination and encourages reflection.
+                </p>
+                <p class="about-text">
+                    Thank you for choosing us as your source of inspiration and information. Read, explore, and discover new things with us!
+                </p>
+        </div>
+        
+
+        
+        <section class="faq mt-5">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is this project about?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                This project is designed to provide interesting facts and insights on various topics.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How can I contact support?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                You can contact support through the email provided on the profile page.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Where can I find more articles?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                More articles can be found in the Articles section on the homepage.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+            </div>
+        </section>
+    </main>
+
+    <section class="rating text-center mb-5">
+        <h2>Rate Our Project</h2>
+        <div class="stars">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+        <div id="ratingMessage" class="mt-3"></div>
+    </section>
+
+        
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p><b>Group members:</b> Kulataev Alisher, Dauletbay Assiyat, Baidildayev Bakdaulet</p>
+            <p>2024 © All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="saved.js"></script>
+    <script src="script.js"></script>
+    <script src="auth-flow.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
